@@ -6,7 +6,7 @@ if(file_exists($filename)){
   
   $filtered = [];
   if (preg_match_all('/\[([^\]]*)\]/', $allwords, $filtered)) {
-    for($filtered[1] as $word){
+    foreach($filtered[1] as $word){
       echo $word."\n";
     }
   }
